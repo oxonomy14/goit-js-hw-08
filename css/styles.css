@@ -1,3 +1,16 @@
+:root {
+  --basicLightbox-background: rgba(0, 0, 0, 0.8);
+  --basicLightbox-zIndex: 1000;
+  --basicLightbox-duration: 0.9s;
+  --basicLightbox-timing: ease;
+}
+
+.basicLightbox {
+  background-color: var(--basicLightbox-background) !important;
+  z-index: var(--basicLightbox-zIndex) !important;
+  transition: all var(--basicLightbox-duration) var(--basicLightbox-timing) !important;
+}
+
 body {
   display: flex;
   align-items: center; /* Вертикальне вирівнювання */
@@ -23,4 +36,11 @@ body {
   width: 360px;
   height: 200px;
   display: block;
+  transition: all 0.3s ease; /* Додаємо плавний перехід */
+}
+
+.gallery-image:hover {
+  /*transform: translateY(-10px); /* Піднімаємо картинку на 10px */
+  transform: scale(1.04); /* Збільшуємо розмір на 10% */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Додаємо тінь при збільшенні */
 }

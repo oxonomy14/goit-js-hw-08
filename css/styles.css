@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  align-items: center; /* Вертикальне вирівнювання */
+  height: 100vh; /* Висота body, щоб він займав весь екран */
+  margin: 0; /* Прибираємо відступи */
+  padding: 0;
+}
+
+.gallery {
+  margin: 24px auto;
+  width: 1128px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48 px) / 3);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  display: block;
+}
